@@ -1,0 +1,36 @@
+#delete,#edit{
+    border: none;
+    background-color: white;
+    color: black;
+}
+#delete:hover{
+ color: red;
+ background-color: lightpink;
+}
+#edit:hover{
+    color: green;
+    background-color: lightgreen;
+}
+th{
+    font-size: 15px;
+    font-weight: bolder;
+    text-align: center;
+}
+td{
+    font-size: 13px;
+    text-align: center;
+    padding-top: 10px;
+}
+.card-header{
+    font-size: xx-large;
+    text-align: left;
+    color: darkmagenta;
+    font-weight: bold;
+    background-color: white;
+}
+#hide{
+    font-size: 12px;
+    background-color: rgb(42, 104, 104);
+    color: white;
+    text-align: center;
+}

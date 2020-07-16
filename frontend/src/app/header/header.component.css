@@ -1,0 +1,25 @@
+h1{
+    background:linear-gradient(to right, #186b86 0%, #961758 100%);
+    height: 60px;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bolder;
+    z-index: -1;
+    color: oldlace;
+    /* padding: 3px; */
+    text-align: center;
+    border: none;
+}
+a{
+    font-size: 16px;
+    padding: 20px;
+   
+    color: navy;
+}
+.card-header{
+   
+    background:linear-gradient(to right, #6fc9e7 0%, #f067ae 100%);
+    border: none;
+    z-index: 1;
+    margin: 0px;
+}

@@ -1,0 +1,48 @@
+
+
+<div class="card">
+    <form (ngSubmit)="userlogin()" class="form" [formGroup]="loginForm"> 
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class='table'>
+                    <tbody>
+                        <tr>
+                            <td><label>Email:</label></td>
+                            <td><input type="email" [class.is-invalid]="loginForm.get('email').invalid &&
+                                loginForm.get('email').touched" name="p_mail" formControlName='email' class="form-control"  [(ngModel)]="users.email" required>
+                            <div *ngIf="loginForm.get('email').invalid && loginForm.get('email').touched">
+                                <small *ngIf="loginForm.get('email').errors?.required" class="text-danger">Email cannot be Empty</small><br>
+                                <small *ngIf="loginForm.get('email').errors?.pattern" class="text-danger">Enter a Vaild Email</small>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td><input type="password" [class.is-invalid]="loginForm.get('password').invalid &&
+                                loginForm.get('password').touched" name="p_password" formControlName='password' class="form-control"  [(ngModel)]="users.password" required>
+                                <div *ngIf="loginForm.get('password').invalid && loginForm.get('password').touched">
+                                    <small *ngIf="loginForm.get('password').errors?.required" class="text-danger">Password cannot be Empty</small><br>
+                                    <small *ngIf="loginForm.get('password').errors?.minlength" class="text-danger">Minimum 8 characters</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <input type="submit" id="button2" [disabled] = "loginForm.invalid" class="btn btn-success" value="Log In">
+                               
+                        </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Not a Registered User? <br><a  routerLink="/register">Register </a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>

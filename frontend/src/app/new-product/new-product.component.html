@@ -1,0 +1,98 @@
+<div class="card">
+    <form (ngSubmit)="AddProduct()" [formGroup]="productForm">
+        <div class="card-header">
+            {{title}}
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class='table'>
+                    <tbody>
+                        <tr>
+                            <td><label>Product Id</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('id').invalid &&
+                                productForm.get('id').touched" formControlName='id' class="form-control" name="p_id" class="form-control"  [(ngModel)]="productItem.productId"/>
+                                <div *ngIf="productForm.get('id').invalid && productForm.get('id').touched">
+                                    <small *ngIf="productForm.get('id').errors?.required" class="text-danger">Product Id cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('id').errors?.pattern" class="text-danger">Enter Number Value</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Name</label></td>
+                            <td><input type="text" name="p_name" [class.is-invalid]="productForm.get('name').invalid &&
+                                productForm.get('name').touched" formControlName='name' class="form-control"  [(ngModel)]="productItem.productName">
+                                <div *ngIf="productForm.get('name').invalid && productForm.get('name').touched">
+                                    <small *ngIf="productForm.get('name').errors?.required" class="text-danger">Product Name cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('name').errors?.pattern" class="text-danger">Enter a Vaild Product Name</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Product Code</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('code').invalid &&
+                                productForm.get('code').touched" formControlName='code' class="form-control" name="p_code" class="form-control"  [(ngModel)]="productItem.productCode">
+                                <div *ngIf="productForm.get('code').invalid && productForm.get('code').touched">
+                                    <small *ngIf="productForm.get('code').errors?.required" class="text-danger">Product Code cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('code').errors?.pattern" class="text-danger">Enter a Vaild Product Code</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Release Date</label></td>
+                            <td><input type="date" [class.is-invalid]="productForm.get('date').invalid &&
+                                productForm.get('date').touched" formControlName='date' class="form-control" name="p_date" class="form-control"  [(ngModel)]="productItem.releaseDate">
+                                <div *ngIf="productForm.get('name').invalid && productForm.get('date').touched">
+                                    <small *ngIf="productForm.get('date').errors?.required" class="text-danger">Release Date cannot be Empty</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Description</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('description').invalid &&
+                                productForm.get('description').touched" formControlName='description' class="form-control" name="p_dist" class="form-control"  [(ngModel)]="productItem.description">
+                                <div *ngIf="productForm.get('description').invalid && productForm.get('description').touched">
+                                    <small *ngIf="productForm.get('description').errors?.required" class="text-danger">description cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('description').errors?.pattern" class="text-danger">Enter a Vaild description</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Price</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('price').invalid &&
+                                productForm.get('price').touched" formControlName='price' class="form-control" name="p_price" class="form-control"  [(ngModel)]="productItem.price">
+                                <div *ngIf="productForm.get('price').invalid && productForm.get('price').touched">
+                                    <small *ngIf="productForm.get('price').errors?.required" class="text-danger">Price value cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('price').errors?.pattern" class="text-danger">Enter Number Value</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Star Rating</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('rating').invalid &&
+                                productForm.get('rating').touched" formControlName='rating' class="form-control" name="p_rating" class="form-control"  [(ngModel)]="productItem.starRating">
+                                <div *ngIf="productForm.get('rating').invalid && productForm.get('rating').touched">
+                                    <small *ngIf="productForm.get('rating').errors?.required" class="text-danger">Star rating cannot be Empty</small><br>
+                                    <small *ngIf="productForm.get('rating').errors?.pattern" class="text-danger">Enter Number Value between [0-5]</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>Product image</label></td>
+                            <td><input type="text" [class.is-invalid]="productForm.get('image').invalid &&
+                                productForm.get('image').touched" formControlName='image' class="form-control" name="p_image" class="form-control"  [(ngModel)]="productItem.imageUrl">
+                                <div *ngIf="productForm.get('image').invalid && productForm.get('image').touched">
+                                    <small *ngIf="productForm.get('image').errors?.required" class="text-danger">Email cannot be Empty</small>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="button" value="clear" id="button1" class="btn btn-secondary" (click)="Clear()"> 
+                                <input type="submit" id="button2" [disabled] = "productForm.invalid" class="btn btn-info" value="Submit"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </form>
+</div>
