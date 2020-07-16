@@ -1,5 +1,5 @@
 label{
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
 }
 input{
@@ -8,16 +8,29 @@ input{
 .card-header{
  font-size: 20px;
  font-weight: bolder;
- color: purple;
+ background-color: rgb(241, 223, 241);
+ color: darkmagenta;
+ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .card-body{
     margin-left:50px;
     margin-right:50px;
+    
 }
 
-#button1,#button2{
+#button2{
     margin: 5px;
+    height: 35px;
+    width: 80px;
 }
 small{
+    font-size: 15px;
+}
+.card{
+  margin: 10% 30% 10% 30%;
+  height: 400px;
+  width:600px;
+}
+#reg{
     font-size: 15px;
 }

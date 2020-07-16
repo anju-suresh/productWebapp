@@ -6,8 +6,9 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class='table'>
-                    <tbody>
+                <table class='table table-borderless'>
+                    <br>
+                    <br>
                         <tr>
                             <td><label>Name:</label></td>
                             <td><input type="text" name="p_name" class="form-control" [class.is-invalid]=" registerForm.get('name').invalid &&
@@ -17,7 +18,7 @@
                                     <small *ngIf=" registerForm.get('name').errors?.pattern" class="text-danger">Enter only Alphabets</small>
                                 </div>
                             </td>
-                        </tr>
+                        </tr><br>
                         <tr>
                             <td><label>User Email:</label></td>
                             <td><input type="email" formControlName='email' [class.is-invalid]=" registerForm.get('email').invalid &&
@@ -28,7 +29,7 @@
                                 </div>
                             </td>
                         
-                        </tr>
+                        </tr><br>
                         <tr>
                             <td><label>Password</label></td>
                             <td><input type="password" [class.is-invalid]="registerForm.get('password').invalid &&
@@ -38,7 +39,7 @@
                                     <small *ngIf="registerForm.get('password').errors?.minlength" class="text-danger">Minimum 8 characters</small>
                                 </div>
                             </td>
-                        </tr>
+                        </tr><br>
                         <tr>
                             <td></td>
                             <td><input type="button" value="clear" id="button1" class="btn btn-secondary" (click)="Clear()"> 
@@ -46,9 +47,9 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Already Registered? <br><a  routerLink="/login">Log In </a></td>
+                            <td id="reg">Already Registered? <br><a  routerLink="/">Log In </a></td>
                         </tr>
-                    </tbody>
+                    
                 </table>
             </div>
         </div>

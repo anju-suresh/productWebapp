@@ -20,7 +20,7 @@ export class NewProductComponent implements OnInit {
     code:['',[Validators.required, Validators.pattern("[a-zA-Z0-9 ]*")]],
     date:['',[Validators.required]],
     description:['',[Validators.required, Validators.pattern("[a-zA-Z0-9 ]*")]],
-    price:['',[Validators.required, Validators.pattern("[0-9]+\.[0-9]*")]],
+    price:['',[Validators.required, Validators.pattern("[0-9]*")]],
     rating:['',[Validators.required, Validators.pattern("[0-5]+\.[0-9]*")]],
     image:['',[Validators.required]]
   })
@@ -33,12 +33,12 @@ export class NewProductComponent implements OnInit {
     console.log(this.productItem)
     console.log("called");
     alert('Success');
-    this.router.navigate(['/']);
+    this.router.navigate(['/products']);
     }else{
-      this.router.navigate(['/']);
+      this.router.navigate(['/products']);
     }
   }
   Clear(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/products']);
   }
 }

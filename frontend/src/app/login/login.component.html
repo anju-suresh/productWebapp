@@ -7,8 +7,8 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class='table'>
-                    <tbody>
+                <table class='table table-borderless'>
+                    <br>
                         <tr>
                             <td><label>Email:</label></td>
                             <td><input type="email" [class.is-invalid]="loginForm.get('email').invalid &&
@@ -18,7 +18,7 @@
                                 <small *ngIf="loginForm.get('email').errors?.pattern" class="text-danger">Enter a Vaild Email</small>
                             </div>
                             </td>
-                        </tr>
+                        </tr><br>
                         <tr>
                             <td><label>Password</label></td>
                             <td><input type="password" [class.is-invalid]="loginForm.get('password').invalid &&
@@ -28,7 +28,7 @@
                                     <small *ngIf="loginForm.get('password').errors?.minlength" class="text-danger">Minimum 8 characters</small>
                                 </div>
                             </td>
-                        </tr>
+                        </tr><br>
                         <tr>
                             <td></td>
                             <td>
@@ -38,9 +38,9 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td>Not a Registered User? <br><a  routerLink="/register">Register </a></td>
+                            <td id="reg">Not a Registered User? <br><a  routerLink="/register">Register </a></td>
                         </tr>
-                    </tbody>
+                    
                 </table>
             </div>
         </div>

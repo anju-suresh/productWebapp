@@ -1,25 +1,37 @@
 h1{
-    background:linear-gradient(to right, #186b86 0%, #961758 100%);
-    height: 60px;
+    background:transparent;
+    height: 120px;
+    margin-top: 60px;
     font-size: 40px;
     font-style: oblique;
     font-weight: bolder;
     z-index: -1;
-    color: oldlace;
-    /* padding: 3px; */
+    color: white;
     text-align: center;
     border: none;
+    width: 100%;
 }
 a{
-    font-size: 16px;
+    font-size: 20px;
     padding: 20px;
-   
-    color: navy;
+    font-weight: bold;
+    color: rgb(233, 231, 231);
 }
 .card-header{
-   
-    background:linear-gradient(to right, #6fc9e7 0%, #f067ae 100%);
+    background: linear-gradient(to left, #16a0ce 0%, #9e0c55 100%);
+    /* background-color: #9e0c55; */
     border: none;
     z-index: 1;
+    padding: 0%;
     margin: 0px;
+}
+#right{
+    margin-left: 63%;
+}
+.links{
+    
+    padding: 10px;
+    height: 50px;
+    background:linear-gradient(to left, #3bbce7 0%, #cf4c8e 100%)
+    /* background-color: #b30b5f; */
 }

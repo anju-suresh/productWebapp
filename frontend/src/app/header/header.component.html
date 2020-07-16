@@ -1,7 +1,11 @@
-<h1>{{title}}</h1>
+
 <div class="card-header">
-    <a routerLink="/">Products</a>
-    <a routerLink="/add">Add Product</a>
-    <a routerLink="/login">Log In</a>
-    <a routerLink="/register">Register</a>
+    
+    <div class="links">
+        <a routerLink="/products">Products</a>
+        <a routerLink="/add">Add Product</a>
+        <a id="right" routerLink="/"><span class="glyphicon glyphicon-log-in"></span> Log In</a>
+        <a id="left" routerLink="/register"><span class="glyphicon glyphicon-user"></span> Register</a>
+    </div>
+    <h1>{{title}}</h1>
 </div>

@@ -32,7 +32,7 @@ export class ProductListComponent implements OnInit {
     this.products = JSON.parse(JSON.stringify(data));})
     alert('Deleted');
     }else{
-      this.router.navigate(['/']);
+      this.router.navigate(['/products']);
     }
     
   }

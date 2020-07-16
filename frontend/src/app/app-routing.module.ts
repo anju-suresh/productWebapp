@@ -9,10 +9,10 @@ import {LoginComponent} from './login/login.component'
 import { from } from 'rxjs';
 
 const routes: Routes = [
-  {path:'',component:ProductListComponent},
+  {path:'products',component:ProductListComponent},
   {path:'add',component:NewProductComponent},
   {path:'update/:pid',component:UpdateProductComponent},
-  {path:"login",component:LoginComponent},
+  {path:"",component:LoginComponent},
   {path:'register',component:RegisterComponent}
 
 ];

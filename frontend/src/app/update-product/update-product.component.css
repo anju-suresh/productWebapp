@@ -1,5 +1,5 @@
 label{
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
 }
 input{
@@ -17,4 +17,15 @@ input{
 
 #button1,#button2{
     margin: 5px;
+    height: 35px;
+    width: 80px;
+    font-size: 15px;
 }
+small{
+    font-size: 18px;
+}
+.card{
+    margin: 10% 20% 10% 20%;
+    height: 800px;
+    width: 1000px;
+  }

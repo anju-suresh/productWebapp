@@ -12,17 +12,6 @@ import { productModel } from '../product-list/product.model';
 export class UpdateProductComponent implements OnInit {
   title:string = "Edit Product";
   constructor(private productService: ProductService,private router: Router,private _route:ActivatedRoute) {
-    // const navigation = this.router.getCurrentNavigation();
-    // const state = navigation.extras.state as{
-    // productId : Number,
-    // productName : String,
-    // productCode : String,
-    // releaseDate : String,
-    // description : String,
-    // price : Number,
-    // starRating : Number,
-    // imageUrl : String
-    // };
    }
    pid="";
   productItem= new productModel(null,null,null,null,null,null,null,null)
@@ -35,26 +24,20 @@ export class UpdateProductComponent implements OnInit {
       this.productItem=JSON.parse(JSON.stringify(data));
     });
   }
-  // update(event){
-  //   this.productService.update(event);
-  //   console.log(this.productItem)
-  //   console.log("called");
-  //   alert('Success');
-  //   this.router.navigate(['/update']);
-  // }
+
   update(){
     if (window.confirm("Do you want to update this product?")){
     this.productService.update(this.productItem);
     console.log(this.productItem)
     console.log("called");
     alert('Updated Successfuly');
-    this.router.navigate(['/']);
+    this.router.navigate(['/products']);
     }else{
-      this.router.navigate(['/']);
+      this.router.navigate(['/products']);
     }
   }
   Clear(){
-    this.router.navigate(['/']);
+    this.router.navigate(['/products']);
   }
 
 }

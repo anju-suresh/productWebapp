@@ -12,20 +12,21 @@
     background-color: lightgreen;
 }
 th{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bolder;
     text-align: center;
 }
 td{
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
     padding-top: 10px;
 }
 .card-header{
-    font-size: xx-large;
+    font-size: 40px;
     text-align: left;
     color: darkmagenta;
-    font-weight: bold;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: white;
 }
 #hide{
@@ -33,4 +34,7 @@ td{
     background-color: rgb(42, 104, 104);
     color: white;
     text-align: center;
+}
+.card{
+    margin:80px;
 }

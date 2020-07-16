@@ -1,5 +1,5 @@
 label{
-    font-size: 13px;
+    font-size: 20px;
     text-align: center;
 }
 input{
@@ -8,7 +8,7 @@ input{
 .card-header{
  font-size: 20px;
  font-weight: bolder;
- color: purple;
+ color: darkmagenta;
 }
 .card-body{
     margin-left:50px;
@@ -17,7 +17,17 @@ input{
 
 #button1,#button2{
     margin: 5px;
+    height: 35px;
+    width: 80px;
 }
 small{
     font-size: 15px;
 }
+#reg{
+    font-size: 18px;
+}
+.card{
+    margin: 10% 30% 10% 30%;
+    height: 500px;
+    width:600px;
+  }

@@ -28,9 +28,9 @@ export class RegisterComponent implements OnInit {
     this.productService.newUser(this.user);
     console.log(this.user);
     alert('Registered Successfully');
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
   Clear(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['/']);
   }
 }
