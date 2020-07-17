@@ -121,23 +121,20 @@ app.get("/delete/:id",(req,res)=>{
                     console.log(password);
                     console.log("logged in user");
                     userData.findOne({email: email},(err,user)=>{
-                        console.log(user.email);
-                        
-                        console.log(user.password);
                         console.log(err);
                         if(err){
-                            console.log('Invalid Credentionals');
+                            err.json('Invalid Login')
                         }else{
                             if(user.email!==email){
                                 console.log('Invalid Email')
-                                res.send('Invalid Email')
+                                res.json('Invalid Email')
                             }else
                             if(user.password!==password){
                                 console.log('Invalid password')
-                                res.send('Invalid Password')
+                                res.json('Invalid Password')
                 
                             }else{
-                                res.status(200).send(user);
+                                res.status(200).json(user);
                             }
                         }    
                     });

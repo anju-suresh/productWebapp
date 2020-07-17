@@ -33,14 +33,16 @@ export class LoginComponent implements OnInit {
     .subscribe(
       res=> {
         console.log(res);
-          if(res){
+          if(res==='Invalid Password' || res === 'Invalid Email'){
+            alert('Invalid Credentionals');
+           
+          }else {
             alert('Logged In Successfully');
             this.router.navigate(['/products']);
-          }else 
-          if(res){
-            alert('Invalid Credentionals');
-            // console.log(res);
           }
+        },
+      err=>{
+          console.log(err);
         }
 
       )
