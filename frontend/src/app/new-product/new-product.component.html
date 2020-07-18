@@ -1,3 +1,12 @@
+<div class="header">
+    <div class="links">
+    <a  routerLink="/products">Products</a>
+    <a id="pro" routerLink="/add">Add Product</a>
+    <a id="log" routerLink="/"><span class="glyphicon glyphicon-log-out"></span> Log Out</a>
+    </div>
+    <h1>{{titlehead}}</h1>
+</div>
+
 <div class="card">
     <form (ngSubmit)="AddProduct()" [formGroup]="productForm">
         <div class="card-header">

@@ -11,6 +11,7 @@ import { from } from 'rxjs';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
+  titlehead:String="Product Management"
   title:String ="Product List";
   products:productModel[];
   imageWidth: number =50;

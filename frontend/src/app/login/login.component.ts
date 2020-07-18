@@ -13,6 +13,7 @@ import { from } from 'rxjs';
 })
 
 export class LoginComponent implements OnInit {
+  titlehead:String="Product Management"
   title:string="Log In";
   
   constructor(private router: Router,private productService: ProductService, private fb: FormBuilder) { }

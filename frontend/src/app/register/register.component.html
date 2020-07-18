@@ -1,4 +1,11 @@
 
+<div class="header">
+    <div class="links">
+        <a id="right" routerLink="/"><span class="glyphicon glyphicon-log-in"></span> Log In</a>
+        <a id="left" routerLink="/register"><span class="glyphicon glyphicon-user"></span> Register</a>
+    </div>
+    <h1>{{titlehead}}</h1>
+</div>
 <div class="card">
     <form (ngSubmit)="registerUser()" class="form" [formGroup]="registerForm">
         <div class="card-header">
@@ -47,7 +54,7 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td id="reg">Already Registered? <br><a  routerLink="/">Log In </a></td>
+                            <td id="reg">Already Registered? <br><a id="nxt" routerLink="/">Log In </a></td>
                         </tr>
                     
                 </table>

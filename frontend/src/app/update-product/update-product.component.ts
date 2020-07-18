@@ -10,6 +10,7 @@ import { productModel } from '../product-list/product.model';
   styleUrls: ['./update-product.component.css']
 })
 export class UpdateProductComponent implements OnInit {
+  titlehead:String="Product Management"
   title:string = "Edit Product";
   constructor(private productService: ProductService,private router: Router,private _route:ActivatedRoute) {
    }

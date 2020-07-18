@@ -10,6 +10,7 @@ import { productModel } from '../product-list/product.model';
   styleUrls: ['./new-product.component.css']
 })
 export class NewProductComponent implements OnInit {
+  titlehead:String="Product Management"
   title:string = "Add Product";
   constructor(private productService: ProductService,private router: Router, private fb: FormBuilder) { }
 

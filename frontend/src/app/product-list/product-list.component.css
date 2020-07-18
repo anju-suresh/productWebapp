@@ -2,6 +2,12 @@
     border: none;
     background-color: white;
     color: black;
+    
+   
+}
+#edit{
+    margin-top: 16px;
+    padding: 0px;
 }
 #delete:hover{
  color: red;
@@ -37,4 +43,44 @@ td{
 }
 .card{
     margin:80px;
+}
+h1{
+    background:transparent;
+    height: 120px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-style: oblique;
+    font-weight: bolder;
+    z-index: -1;
+    color: white;
+    text-align: center;
+    border: none;
+    width: 100%;
+}
+a{
+    font-size: 20px;
+    padding: 20px;
+    font-weight: bold;
+    color: rgb(221, 215, 215);
+}
+.header{
+    background: linear-gradient(to left, #16a0ce 0%, #9e0c55 100%);
+    /* background-color: #9e0c55; */
+    border: none;
+    padding: 0%;
+    margin: 0px;
+}
+
+.links{
+    
+    padding: 10px;
+    height: 50px;
+    background:linear-gradient(to left, #61bfdf 0%, #cf4c8e 100%)
+    /* background-color: #b30b5f; */
+}
+#log{
+    margin-left: 75%;
+}
+#pro{
+    color: white;
 }

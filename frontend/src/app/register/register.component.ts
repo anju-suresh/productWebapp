@@ -10,6 +10,7 @@ import {FormBuilder,Validators} from '@angular/forms'
   styleUrls: ['./register.component.css']
 })
 export class RegisterComponent implements OnInit {
+  titlehead:String="Product Management"
   title:string="Sign Up";
   // user={};
   constructor(private router: Router,private productService: ProductService,private fb: FormBuilder) { }
